@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Kingsman';
+    src: url(../font/Kingsman.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Kingsman';
+    font-size: 10vw;
+    text-align: center;
+    padding: 20px;    
+}
+
+footer{
+    font-family: 'Kingsman';
+    font-size: 24px;
+    text-align: center;
+    background-color: #222;
+    padding: 50px 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #222;
+}
+
+li{
+    height: 20vw;
+    flex-grow: 1;
+}
+
+li:hover{
+    z-index: 1;
+}
+
+li:last-child{
+    flex-grow: 0;    
+}
+
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(75%);
+    transition: all 0.25s;
+}
+
+img:hover {
+    filter: grayscale(0%) brightness(100%);    
+    transform: scale(1.2);
+    box-shadow: 0 0 200px 100px #000;
+}
